@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/ic_phone_bg_deep"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_username"
+        android:textColorHint="@color/outlinpink"
+        app:boxBackgroundColor="@color/deepPink"
+        app:boxStrokeColor="@color/outlinpink"
+        app:hintTextColor="@color/outlinpink"
+
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/outlinpink"
+        app:boxBackgroundColor="@color/deepPink"
+        app:boxStrokeColor="@color/outlinpink"
+        app:hintTextColor="@color/outlinpink"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:strokeColor="@color/outlinpink"
+            app:strokeWidth="1dp"
+            android:textColor="@color/outlinpink"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:backgroundTint="@color/outlinpink"
+            android:layout_marginStart="20dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
